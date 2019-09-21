@@ -2,6 +2,7 @@ package org.springframework.samples.petclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * PetClinic Spring Boot Application.
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Dave Syer
  *
  */
+@EnableScheduling
 @SpringBootApplication
 public class PetClinicApplication {
 
