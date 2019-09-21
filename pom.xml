@@ -133,7 +133,7 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+    <!--  <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${jacoco.version}</version>
@@ -151,29 +151,29 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin>-->
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties
         file is present at the classpath -->
-      <plugin>
-        <groupId>pl.project13.maven</groupId>
-        <artifactId>git-commit-id-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>revision</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <verbose>true</verbose>
-          <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
-          <generateGitPropertiesFile>true</generateGitPropertiesFile>
-          <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties
-          </generateGitPropertiesFilename>
-          <failOnNoGitDirectory>false</failOnNoGitDirectory>
-        </configuration>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>pl.project13.maven</groupId>-->
+<!--        <artifactId>git-commit-id-plugin</artifactId>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <goals>-->
+<!--              <goal>revision</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--        <configuration>-->
+<!--          <verbose>true</verbose>-->
+<!--          <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>-->
+<!--          <generateGitPropertiesFile>true</generateGitPropertiesFile>-->
+<!--          <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties-->
+<!--          </generateGitPropertiesFilename>-->
+<!--          <failOnNoGitDirectory>false</failOnNoGitDirectory>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
 
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
