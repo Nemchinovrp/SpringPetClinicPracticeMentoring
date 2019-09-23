@@ -2,6 +2,7 @@ package org.springframework.samples.petclinic.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.petclinic.aop.EmployeeManager;
+import org.springframework.samples.petclinic.aop.annotation.Main;
 import org.springframework.samples.petclinic.aop.geeksforgeeks.ImplementAspect;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,8 @@ public class TestAop {
     private EmployeeManager manager;
     @Autowired
     ImplementAspect implementAspect;
+    @Autowired
+    private Main main;
 
     @GetMapping("/aop")
     public void testAop() throws Exception {
@@ -21,5 +24,10 @@ public class TestAop {
     @GetMapping("/geeks")
     public void test() {
         implementAspect.aspectCall();
+    }
+
+    @GetMapping("/baeldung")
+    public void customAnnotation() throws InterruptedException {
+        main.serve();
     }
 }
