@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * PetClinic Spring Boot Application.
  *
  * @author Dave Syer
- *
  */
 @EnableScheduling
 @SpringBootApplication
