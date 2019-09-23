@@ -21,6 +21,5 @@ public class TestAop {
     @GetMapping("/geeks")
     public void test() {
         implementAspect.aspectCall();
-        implementAspect.myMethod();
     }
 }
