@@ -1,7 +1,7 @@
 package org.springframework.samples.petclinic.controller;
 
-import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.dao.OwnerRepository;
+import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

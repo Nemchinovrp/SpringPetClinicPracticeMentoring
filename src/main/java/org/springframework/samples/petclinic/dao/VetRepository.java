@@ -1,12 +1,12 @@
 package org.springframework.samples.petclinic.dao;
 
-import java.util.Collection;
-
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.repository.Repository;
 import org.springframework.samples.petclinic.model.Vet;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Collection;
 
 /**
  * Repository class for <code>Vet</code> domain objects All method names are compliant with Spring Data naming
