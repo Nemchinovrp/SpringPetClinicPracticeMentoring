@@ -18,7 +18,7 @@ public class TestAop {
 
     @GetMapping("/aop")
     public void testAop() throws Exception {
-        manager.getEmployeeById(1);
+        manager.findAll();
     }
 
     @GetMapping("/geeks")

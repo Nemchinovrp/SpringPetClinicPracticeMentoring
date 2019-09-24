@@ -12,4 +12,6 @@ public interface EmployeeManager {
     public void deleteEmployee(Integer employeeId);
 
     public void updateEmployee(EmployeeDTO employee);
+
+    public List<EmployeeDTO> findAll();
 }
